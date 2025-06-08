@@ -4,4 +4,4 @@ Ce dépôt contient des laboratoires réseau créés avec Cisco Packet Tracer da
 
 ## Liste des labs
 
-- [Lab01_Basic-Network](./Lab01_Basic-Network) : topologie de base avec deux PC, un switch et un routeur.
+- [Lab01_Basic-Network](./Lab01_Basic-Network) : topologie de base avec deux PC, deux switchs et un routeur.
