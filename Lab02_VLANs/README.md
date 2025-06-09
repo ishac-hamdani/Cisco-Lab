@@ -12,9 +12,7 @@ Créer deux VLANs isolés sur un switch de niveau 2. Vérifier qu'aucune communi
 - PC2 connecté à `Fa0/2` → VLAN 20 (Étudiant)
 
 ## Configuration
-
-### Création des VLANs
-Commande: 
+```bash
 Switch> enable
 Switch# configure terminal
 Switch(config)# vlan 10
@@ -31,3 +29,4 @@ Switch(config)# interface fastEthernet 0/2
 Switch(config-if)# switchport mode access
 Switch(config-if)# switchport access vlan 20
 Switch(config-if)# exit
+
