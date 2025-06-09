@@ -5,4 +5,5 @@ Ce dépôt contient des laboratoires réseau créés avec Cisco Packet Tracer da
 ## Liste des labs
 
 - [Lab01_Basic-Network](./Lab01_Basic-Network) : topologie de base avec deux PC, deux switchs et un routeur.
-- [Lab02_VLANs](./Lab02_VLANs) : topologie avec 2 VLANs configurés sur 2 switches et routage inter-VLAN via un routeur.
+- [Lab02_VLANs](./Lab02_VLANs) : deux VLANs sur un switch L2, isolation complète.
+
