@@ -1,31 +1,33 @@
-# Lab02_VLANs
+# Lab02_VLANs-Isolation
 
-## Description
-Topologie avec deux VLANs configurés sur deux switches de couche 2 et routage inter-VLAN réalisé via un routeur (router-on-a-stick).
+## Objectif
 
-## VLANs
-- VLAN 10 : PC1 connecté au port assigné sur Switch1 (Layer 3)
-- VLAN 20 : PC2 connecté au port assigné sur Switch2 (Layer 3)
+Créer deux VLANs isolés sur un switch de niveau 2. Vérifier qu'aucune communication n'est possible entre les hôtes de VLANs différents sans routage inter-VLAN.
 
-## Configuration des switches
-- Création des VLANs 10 et 20
-- Attribution des ports aux VLANs respectifs en mode access
-- Configuration du trunk entre les switches et vers le routeur
+## Topologie
 
-## Routage inter-VLAN
-- Configuration d’une interface sub-interface sur le routeur pour chaque VLAN
-- Assignation d’adresses IP aux interfaces sub-interfaces
-- Activation du routage inter-VLAN sur le routeur
+- 1 switch (Cisco 2960)
+- 2 PC
+- PC1 connecté à `Fa0/1` → VLAN 10 (Professeur)
+- PC2 connecté à `Fa0/2` → VLAN 20 (Étudiant)
 
-## Vérification
-- Tester la communication entre PC1 et PC2 (doit réussir grâce au routage inter-VLAN)
-- Tester la communication entre chaque PC et son interface VLAN respective
+## Configuration
 
-## Fichiers
-- `Lab02_VLANs.pkt` : topologie Packet Tracer
-- `configs/` : configurations CLI des switches et routeur
-
-## Instructions d’usage
-1. Ouvrir le fichier Packet Tracer
-2. Charger les configurations dans les équipements ou configurer manuellement selon les fichiers `configs/`
-3. Vérifier la connectivité entre les VLANs via les PCs
+### Création des VLANs
+Commande: 
+Switch> enable
+Switch# configure terminal
+Switch(config)# vlan 10
+Switch(config-vlan)# name Professeur
+Switch(config-vlan)# exit
+Switch(config)# vlan 20
+Switch(config-vlan)# name Etudiant
+Switch(config-vlan)# exit
+Switch(config)# interface fastEthernet 0/1
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+Switch(config-if)# exit
+Switch(config)# interface fastEthernet 0/2
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 20
+Switch(config-if)# exit
