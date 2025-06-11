@@ -52,7 +52,7 @@ ip routing
 exit
 
 write memory
-
+```
 
 ## Configuration PC  
 - PC VLAN 10 : IP 192.168.10.x /24, passerelle 192.168.10.1  
