@@ -15,8 +15,10 @@ Configurer et tester le routage inter-VLAN permettant la communication entre plu
 - Activation du routage inter-VLAN (`ip routing`)  
 - Configuration IP des PC avec passerelle correspondante  
 
-## Commandes principales  
+## Configuration complète
+
 ```bash
+! --- Commandes Switch ---
 enable
 configure terminal
 
@@ -53,10 +55,10 @@ exit
 
 write memory
 
+! --- Configuration PC ---
+! PC VLAN 10 : IP 192.168.10.x /24, passerelle 192.168.10.1
+! PC VLAN 20 : IP 192.168.20.x /24, passerelle 192.168.20.1
 
-## Configuration PC  
-- PC VLAN 10 : IP 192.168.10.x /24, passerelle 192.168.10.1  
-- PC VLAN 20 : IP 192.168.20.x /24, passerelle 192.168.20.1  
+! --- Tests ---
+! Ping inter-VLAN entre PC des VLANs différents pour valider le routage.
 
-## Tests  
-- Ping inter-VLAN entre PC des VLANs différents pour valider le routage.
