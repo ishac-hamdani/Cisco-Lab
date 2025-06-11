@@ -12,8 +12,8 @@ Configurer une ACL pour empêcher un PC spécifique (PC2) de faire des requêtes
 - PC1 : 192.168.1.10/24 (réseau autorisé)
 - PC2 : 192.168.2.10/24 (réseau restreint)
 - Routeur avec deux interfaces :
-  - GigabitEthernet0/0/1 : 192.168.1.1/24
-  - GigabitEthernet0/0/2 : 192.168.2.1/24
+  - GigabitEthernet0/0/0 : 192.168.1.1/24
+  - GigabitEthernet0/0/1 : 192.168.2.1/24
 
 ## Étapes de configuration
 
@@ -24,7 +24,7 @@ configure terminal
 access-list 110 deny icmp host 192.168.2.10 any
 access-list 110 permit ip any any
 
-interface FastEthernet0/1
+interface GigabitEthernet0/0/1
 ip access-group 110 in
 
 exit
