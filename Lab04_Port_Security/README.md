@@ -4,7 +4,7 @@
 Configurer la sécurité des ports sur un switch Cisco pour limiter les adresses MAC autorisées sur chaque port et prévenir les accès non autorisés.
 
 ## Matériel  
-- Switch Cisco (exemple 2960)  
+- Switch Cisco (Cisco Catalyst 2960)  
 - PC connectés aux ports en mode accès  
 
 ## Topologie  
