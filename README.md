@@ -6,7 +6,7 @@ Ce dépôt contient des laboratoires réseau créés avec Cisco Packet Tracer da
 
 - [Lab01_Basic-Network](./Lab01_Basic-Network) : topologie de base avec deux PC, deux switchs et un routeur.
 - [Lab02_VLANs](./Lab02_VLANs) : deux VLANs sur un switch L2, isolation complète.
-- [Lab03_InterVLAN-Routing](./Lab03_InterVLAN-Routing) : routage inter-VLAN avec switch L3.
+- [Lab03_InterVLAN-Routing](./Lab03_VLANs) : routage inter-VLAN avec switch L3.
 - [Lab04_Port_Security](./Lab04_Port_Security) : sécurité des ports sur switch Cisco avec Port Security.
 
 
