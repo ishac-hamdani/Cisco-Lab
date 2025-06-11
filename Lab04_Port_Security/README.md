@@ -38,13 +38,12 @@ exit
 write memory
 ```
 ## Explications ##
-switchports port-security active la sécurité des ports.
-maximum 1 limite à une seule adresse MAC.
-violation shutdown désactive le port en cas de violation.
-violation restrict bloque le trafic non autorisé mais laisse le port actif.
-mac-address sticky apprend automatiquement l’adresse MAC connectée et la mémorise.
+- switchports port-security active la sécurité des ports.maximum 1 limite à une seule adresse MAC.
+- violation shutdown désactive le port en cas de violation.
+- violation restrict bloque le trafic non autorisé mais laisse le port actif.
+- mac-address sticky apprend automatiquement l’adresse MAC connectée et la mémorise.
 
 ## Tests ##
-Connecter un PC sur Fa0/1, vérifier qu’il fonctionne.
-Connecter un autre PC sur Fa0/1 : port doit se désactiver (shutdown).
-Sur Fa0/2, connecter un autre PC non autorisé : trafic bloqué mais port reste actif.
+- Connecter un PC sur Fa0/1, vérifier qu’il fonctionne.
+- Connecter un autre PC sur Fa0/1 : port doit se désactiver (shutdown).
+- Sur Fa0/2, connecter un autre PC non autorisé : trafic bloqué mais port reste actif.
