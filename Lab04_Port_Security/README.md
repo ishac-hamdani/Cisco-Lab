@@ -42,6 +42,7 @@ write memory
 - violation shutdown désactive le port en cas de violation.
 - violation restrict bloque le trafic non autorisé mais laisse le port actif.
 - mac-address sticky apprend automatiquement l’adresse MAC connectée et la mémorise.
+- Pour pouvoir refaire la manipulation il faut shutdown et no shutdown le port fastEthernet 0/1
 
 ## Tests ##
 - Connecter un PC sur Fa0/1, vérifier qu’il fonctionne.
