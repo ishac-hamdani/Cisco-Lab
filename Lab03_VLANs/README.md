@@ -53,6 +53,7 @@ exit
 
 write memory
 
+
 ## Configuration PC  
 - PC VLAN 10 : IP 192.168.10.x /24, passerelle 192.168.10.1  
 - PC VLAN 20 : IP 192.168.20.x /24, passerelle 192.168.20.1  
