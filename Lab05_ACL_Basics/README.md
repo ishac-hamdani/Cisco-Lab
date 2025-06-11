@@ -1,17 +1,19 @@
-# Lab05_ACL_Basics - Listes de contrôle d'accès sur routeur Cisco
+# Lab05_ACL_Basics - Blocage ICMP selon l'adresse IP
 
 ## Objectif  
-Configurer des ACL (Access Control List) pour filtrer le trafic réseau selon des adresses IP ou des services.
+Configurer une ACL pour empêcher un PC spécifique (PC2) de faire des requêtes ICMP (ping), tout en laissant un autre PC (PC1) communiquer normalement.
 
 ## Matériel  
 - Routeur Cisco  
 - Switch  
-- PC connectés dans différents sous-réseaux  
+- Deux PC dans des sous-réseaux différents
 
 ## Topologie  
-- PC1 (réseau interne, ex: 192.168.1.0/24)  
-- PC2 (réseau externe, ex: 192.168.2.0/24)  
-- Routeur reliant les deux réseaux  
+- PC1 : 192.168.1.10/24 (réseau autorisé)
+- PC2 : 192.168.2.10/24 (réseau restreint)
+- Routeur avec deux interfaces :
+  - Fa0/0 : 192.168.1.1/24
+  - Fa0/1 : 192.168.2.1/24
 
 ## Étapes de configuration
 
@@ -19,11 +21,11 @@ Configurer des ACL (Access Control List) pour filtrer le trafic réseau selon de
 enable
 configure terminal
 
-access-list 10 deny 192.168.1.100
-access-list 10 permit any
+access-list 110 deny icmp host 192.168.2.10 any
+access-list 110 permit ip any any
 
-interface FastEthernet0/0
-ip access-group 10 in
+interface FastEthernet0/1
+ip access-group 110 in
 
 exit
 write memory
