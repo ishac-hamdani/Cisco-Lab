@@ -44,8 +44,8 @@ end
 write memory
 ```
 ## Configuration PC ##
-PC VLAN 10 : IP 192.168.10.10 /24, passerelle vide
-PC VLAN 20 : IP 192.168.20.10 /24, passerelle vide
+PC VLAN 10 : IP 192.168.10.10 /24, 
+PC VLAN 20 : IP 192.168.20.10 /24,
 
 ## Tests ##
 Ping entre les deux PC → échec attendu (pas de routage inter-VLAN)
