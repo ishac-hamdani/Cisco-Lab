@@ -12,10 +12,10 @@ Ce dépôt contient des laboratoires réseau créés avec Cisco Packet Tracer da
 
 ### Bases réseau  
 - [Lab05_ACL_Basics](./Lab05_ACL_Basics) : listes de contrôle d’accès simples sur routeur.
-- [Lab06_DHCP_Server](./Lab06_DHCP_Server) : configuration serveur DHCP sur routeur  (A venir)
+- [Lab06_DHCP_Server](./Lab06_DHCP_Server) : configuration serveur DHCP sur routeur.
 
 ### Sécurité & contrôle d’accès  
-- [Lab07_Router_Security](./Lab07_Router_Security) : sécurité routeur (SSH, authentification, firewall basique)  (A venir)
+- [Lab07_Router_Security](./Lab07_Router_Security) : sécurité routeur (SSH, authentification, firewall basique).
 - [Lab08_Switch_Security](./Lab08_Switch_Security) : sécurisation avancée des switches (BPDU Guard, Root Guard)  (A venir)
 
 ### Routage & interconnexion  
