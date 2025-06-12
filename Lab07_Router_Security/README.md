@@ -30,7 +30,7 @@ banner motd ^CIshac-LAB^C
 username admin privilege 15 secret cisco123
 
 crypto key generate rsa
-# (choisir 1024 bits minimum)
+# (ici il faut choisir 1024 bits minimum)
 
 ip ssh version 2
 
