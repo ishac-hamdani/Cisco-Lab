@@ -55,15 +55,15 @@ write memory
 ```
 
 ## Explications
--username crée un utilisateur local pour SSH.
--crypto key generate rsa active SSH.
--login local force l’authentification par le compte local.
--transport input ssh bloque Telnet.
--ACL FIREWALL bloque une IP précise (ex. 192.168.1.50).
--ip access-group applique l’ACL au trafic entrant.
+- username crée un utilisateur local pour SSH.
+- crypto key generate rsa active SSH.
+- login local force l’authentification par le compte local.
+- transport input ssh bloque Telnet.
+- ACL FIREWALL bloque une IP précise (ex. 192.168.1.50).
+- ip access-group applique l’ACL au trafic entrant.
 
 ## Tests
 Depuis le PC :
--Tester SSH vers 192.168.1.1 → accès demandé avec login/password
--Tester Telnet → refusé
--Simuler un PC avec IP 192.168.1.50 → bloqué par l’ACL
+- Tester SSH vers 192.168.1.1 → accès demandé avec login/password
+- Tester Telnet → refusé
+- Simuler un PC avec IP 192.168.1.50 → bloqué par l’ACL
