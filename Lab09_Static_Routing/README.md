@@ -41,7 +41,7 @@ banner motd ^CIshac-LAB^C
 exit  
 ```
 
-##Configuration R2
+## Configuration R2
 ```bash
 enable
 configure terminal  
