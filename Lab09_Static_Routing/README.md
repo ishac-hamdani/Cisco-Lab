@@ -20,41 +20,42 @@ Ce lab met en œuvre un routage statique entre deux réseaux via un routeur Cisc
 
 ## Configuration R1
 ```bash
-hostname R1
-
-interface GigabitEthernet0/0/0
- ip address 192.168.10.1 255.255.255.252
- no shutdown
-
-interface GigabitEthernet0/0/1
- ip address 192.168.1.1 255.255.255.0
- no shutdown
-
-ip dhcp excluded-address 192.168.1.1
-
-ip dhcp pool LAN1
- network 192.168.1.0 255.255.255.0
- default-router 192.168.1.1
-
-ip route 192.168.2.0 255.255.255.0 192.168.10.2
-
-banner motd ^CIshac-LAB^C
+enable
+configure terminal  
+hostname R1  
+interface GigabitEthernet0/0/0  
+ ip address 192.168.10.1 255.255.255.252  
+ no shutdown  
+exit  
+interface GigabitEthernet0/0/1  
+ ip address 192.168.1.1 255.255.255.0  
+ no shutdown  
+exit  
+ip dhcp excluded-address 192.168.1.1  
+ip dhcp pool LAN1  
+ network 192.168.1.0 255.255.255.0  
+ default-router 192.168.1.1  
+exit  
+ip route 192.168.2.0 255.255.255.0 192.168.10.2  
+banner motd ^CIshac-LAB^C  
+exit  
 ```
+
 ###Configuration R2
 ```bash
 enable
-configure terminal
-hostname R2
-interface GigabitEthernet0/0/0
- ip address 192.168.10.2 255.255.255.252
- no shutdown
-exit
-interface GigabitEthernet0/0/1
- ip address 192.168.2.1 255.255.255.0
- no shutdown
-exit
-
-ip route 192.168.1.0 255.255.255.0 192.168.10.1
+configure terminal  
+hostname R2  
+interface GigabitEthernet0/0/0  
+ ip address 192.168.10.2 255.255.255.252  
+ no shutdown  
+exit  
+interface GigabitEthernet0/0/1  
+ ip address 192.168.2.1 255.255.255.0  
+ no shutdown  
+exit  
+ip route 192.168.1.0 255.255.255.0 192.168.10.1  
+exit  
 ```
 ###Adressage PC
 PC0 (LAN1) : DHCP, reçoit une IP dans 192.168.1.0/24
