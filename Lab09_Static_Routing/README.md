@@ -15,7 +15,7 @@ Ce lab met en œuvre un routage statique entre deux réseaux via un routeur Cisc
 
 ## Objectifs  
 - Activer le routage statique entre deux réseaux
-- Configurer un pool DHCP pour LAN1
+- Configurer un pool DHCP pour LAN1 et LAN2
 - Vérifier la connectivité inter-réseaux
 
 ## Configuration R1
