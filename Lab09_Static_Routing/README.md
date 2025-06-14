@@ -57,14 +57,14 @@ exit
 ip route 192.168.1.0 255.255.255.0 192.168.10.1  
 exit  
 ```
-##Adressage PC
+## Adressage PC
 PC0 (LAN1) : DHCP, reçoit une IP dans 192.168.1.0/24
 PC1 (LAN2) : IP statique 192.168.2.10, masque /24, passerelle 192.168.2.1
 
-##Tests
+## Tests
 ping entre PC0 et PC1
 show ip route sur chaque routeur
 Vérification des baux DHCP avec show ip dhcp binding
 
-###Remarque
+### Remarque
 Ce lab montre un routage statique minimal avec distribution IP dynamique d’un côté. Utile pour illustrer la base du routage inter-réseaux sans protocole dynamique.
