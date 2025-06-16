@@ -1,4 +1,4 @@
-# Lab06_DHCP_Server - Configuration d’un serveur DHCP sur un routeur Cisco
+# Lab10_Dynamic_Routing_RIP - Configuration d’un routage dynamique grâce à RIP
 
 ## Objectif  
 Configurer un réseau avec 3 LAN reliés par 3 routeurs Cisco via RIP. Chaque LAN a un PC en DHCP.
