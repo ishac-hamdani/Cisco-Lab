@@ -31,7 +31,6 @@ ip dhcp pool LAN2
 ip dhcp pool LAN3
  network 192.168.3.0 255.255.255.0
  default-router 192.168.3.1
-Configuration Interfaces
 ```
 ## Configuration des interfaces
 
@@ -72,7 +71,6 @@ interface Serial0/0/1
 interface Serial0/1/1
  ip address 192.168.30.2 255.255.255.252
  no shutdown
-Configuration RIP (version 2)
 ```
 
 ## Configuration de RIP
@@ -111,12 +109,3 @@ router rip
 - Ping inter-LAN (ex: PC R1 → PC R2, R3)
 - show ip route rip sur chaque routeur
 - show ip protocols pour voir RIP actif
-## Topologie  
-- Routeur connecté au switch via GigabitEthernet0/0/0  
-- PC1 et PC2 connectés au switch  
-- Réseau : 192.168.1.0/24  
-- Passerelle : 192.168.1.1  
-- DNS : 8.8.8.8  
-- Plage DHCP : 192.168.1.11 à 192.168.1.254  
-- Adresses exclues : 192.168.1.1 à 192.168.1.10  
-
