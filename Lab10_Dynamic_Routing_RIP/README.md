@@ -109,5 +109,8 @@ router rip
 - Ping inter-LAN (ex: PC R1 → PC R2, R3)
 - show ip route rip sur chaque routeur
 - show ip protocols pour voir RIP actif
-- <img width="261" alt="image" src="https://github.com/user-attachments/assets/544fa3fd-9f63-4b8b-8c80-a2f2a8c233ab" />
+<img width="261" alt="image" src="https://github.com/user-attachments/assets/544fa3fd-9f63-4b8b-8c80-a2f2a8c233ab" />
+<img width="261" alt="image" src="https://github.com/user-attachments/assets/706f201a-8805-4941-aa95-a5891a977149" />
+<img width="315" alt="image" src="https://github.com/user-attachments/assets/12255458-b46b-41c0-842b-8e3bf84bef80" />
+
 
