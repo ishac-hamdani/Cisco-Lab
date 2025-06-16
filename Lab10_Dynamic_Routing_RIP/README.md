@@ -10,91 +10,92 @@ R2	192.168.2.0/24	GigabitEthernet0/0	Serial0/0/0 (192.168.10.2/30), Serial0/0/1 
 R3	192.168.3.0/24	GigabitEthernet0/0	Serial0/0/1 (192.168.20.2/30), Serial0/1/1 (192.168.30.2/30)
 
 ## Configuration DHCP
+### R1
 ```bash
-R1
 ip dhcp excluded-address 192.168.1.1
 ip dhcp pool LAN1
  network 192.168.1.0 255.255.255.0
  default-router 192.168.1.1
-R2
 
-nginx
-Copier
-Modifier
+```
+### R2
+```bash
 ip dhcp excluded-address 192.168.2.1
 ip dhcp pool LAN2
  network 192.168.2.0 255.255.255.0
  default-router 192.168.2.1
-R3
+```
 
-nginx
-Copier
-Modifier
+### R3
+```bash
 ip dhcp pool LAN3
  network 192.168.3.0 255.255.255.0
  default-router 192.168.3.1
 Configuration Interfaces
-R1
+```
 
-nginx
-Copier
-Modifier
+### R1
+```bash
 interface GigabitEthernet0/0
  ip address 192.168.1.1 255.255.255.0
  no shutdown
-
 interface Serial0/0/0
  ip address 192.168.10.1 255.255.255.252
  no shutdown
-
 interface Serial0/1/1
  ip address 192.168.30.1 255.255.255.252
  no shutdown
+```
 
-R2
+### R2
+```bash
 interface GigabitEthernet0/0
  ip address 192.168.2.1 255.255.255.0
  no shutdown
-
 interface Serial0/0/0
  ip address 192.168.10.2 255.255.255.252
  no shutdown
-
 interface Serial0/0/1
  ip address 192.168.20.1 255.255.255.252
  no shutdown
+```
 
-R3
+### R3
+```bash
 interface GigabitEthernet0/0
  ip address 192.168.3.1 255.255.255.0
  no shutdown
-
 interface Serial0/0/1
  ip address 192.168.20.2 255.255.255.252
  no shutdown
-
 interface Serial0/1/1
  ip address 192.168.30.2 255.255.255.252
  no shutdown
 Configuration RIP (version 2)
+```
 
-R1
+### R1
+```bash
 router rip
  version 2
  no auto-summary
  network 192.168.1.0
  network 192.168.10.0
  network 192.168.30.0
+```
 
-R2
+### R2
+```bash
 router rip
  version 2
  no auto-summary
  network 192.168.2.0
  network 192.168.10.0
  network 192.168.20.0
+ ```
 
-R3
+### R3
+```bash
 router rip
  version 2
  no auto-summary
@@ -116,27 +117,4 @@ router rip
 - DNS : 8.8.8.8  
 - Plage DHCP : 192.168.1.11 à 192.168.1.254  
 - Adresses exclues : 192.168.1.1 à 192.168.1.10  
-
-## Étapes de configuration
-```bash
-enable
-configure terminal
-
-banner motd 'Ishac-LAB'
-
-interface GigabitEthernet0/0/0
- ip address 192.168.1.1 255.255.255.0
- no shutdown
- exit
-
-ip dhcp excluded-address 192.168.1.1 192.168.1.10
-
-ip dhcp pool LAN
- network 192.168.1.0 255.255.255.0
- default-router 192.168.1.1
- dns-server 8.8.8.8
- exit
-
-write memory
-```
 
