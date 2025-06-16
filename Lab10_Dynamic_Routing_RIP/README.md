@@ -33,6 +33,7 @@ ip dhcp pool LAN3
  default-router 192.168.3.1
 Configuration Interfaces
 ```
+## Configuration des interfaces
 
 ### R1
 ```bash
@@ -74,6 +75,7 @@ interface Serial0/1/1
 Configuration RIP (version 2)
 ```
 
+## Configuration de RIP
 ### R1
 ```bash
 router rip
