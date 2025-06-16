@@ -5,9 +5,9 @@ Configurer un réseau avec 3 LAN reliés par 3 routeurs Cisco via RIP. Chaque LA
 
 ## Topologie
 Routeur	LAN IP	Interface LAN	Interfaces séries
-R1	192.168.1.0/24	GigabitEthernet0/0	Serial0/0/0 (192.168.10.1/30), Serial0/1/1 (192.168.30.1/30)
-R2	192.168.2.0/24	GigabitEthernet0/0	Serial0/0/0 (192.168.10.2/30), Serial0/0/1 (192.168.20.1/30)
-R3	192.168.3.0/24	GigabitEthernet0/0	Serial0/0/1 (192.168.20.2/30), Serial0/1/1 (192.168.30.2/30)
+- R1	192.168.1.0/24	GigabitEthernet0/0	Serial0/0/0 (192.168.10.1/30), Serial0/1/1 (192.168.30.1/30)
+- R2	192.168.2.0/24	GigabitEthernet0/0	Serial0/0/0 (192.168.10.2/30), Serial0/0/1 (192.168.20.1/30)
+ -R3	192.168.3.0/24	GigabitEthernet0/0	Serial0/0/1 (192.168.20.2/30), Serial0/1/1 (192.168.30.2/30)
 
 ## Configuration DHCP
 ### R1
