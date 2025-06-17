@@ -15,13 +15,13 @@ Ce dépôt contient des laboratoires réseau créés avec Cisco Packet Tracer da
 - [Lab06_DHCP_Server](./Lab06_DHCP_Server) : configuration serveur DHCP sur routeur.
 
 ### Sécurité & contrôle d’accès  
-- [Lab07_Router_Security](./Lab07_Router_Security) : sécurité routeur (SSH, authentification, firewall basique).
+- [Lab07_Router_Security](./Lab07_Router_Security) : sécurité routeur (SSH, authentification).
 - [Lab08_Switch_Security](./Lab08_Switch_Security) : sécurisation avancée des switches (BPDU Guard, Root Guard)  (A venir)
 
 ### Routage & interconnexion  
-- [Lab09_Static_Routing](./Lab09_Static_Routing) : routage statique entre plusieurs routeurs  (A venir)
-- [Lab10_Dynamic_Routing_RIP](./Lab10_Dynamic_Routing_RIP) : routage dynamique avec RIP  (A venir)
-- [Lab11_Dynamic_Routing_OSPF](./Lab11_Dynamic_Routing_OSPF) : routage dynamique avec OSPF  (A venir)
+- [Lab09_Static_Routing](./Lab09_Static_Routing) : routage statique entre plusieurs routeurs.
+- [Lab10_Dynamic_Routing_RIP](./Lab10_Dynamic_Routing_RIP) : routage dynamique avec RIP.
+- [Lab11_Dynamic_Routing_OSPF](./Lab11_Dynamic_Routing_OSPF) : routage dynamique avec OSPF.
 - [Lab12_Trunking](./Lab12_Trunking) : configuration de trunk entre switches  (A venir)
 - [Lab13_NAT](./Lab13_NAT) : traduction d’adresses réseau (NAT/PAT)  (A venir)
 - [Lab14_VPN_Basics](./Lab14_VPN_Basics) : VPN site-à-site simple  (A venir)
