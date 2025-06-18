@@ -1,10 +1,5 @@
 # Lab11_Dynamic_Routing_OSPF  
 ## Configuration R1
-
-```bash
-# Lab11_Dynamic_Routing_OSPF  
-## Configuration R1
-
 ```bash
 hostname R1
 
