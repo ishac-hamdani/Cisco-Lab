@@ -3,9 +3,6 @@
 Implémenter un NAT avec surcharge (PAT) entre un réseau local (LAN) et l’extérieur.
 
 ## Architecture
-[PC1] -- [SW] -- [R1] -- [Server PT]
-            |       |       |
-        VLAN 1   NAT    IP Publique
 
 PC1 :
 - DHCP automatique depuis R1
@@ -18,13 +15,11 @@ R1 :
 
 - Server PT : héberge helloworld.html
 
-  ## Configuration
-  ```bash
-  enable
+## Configuration
+```bash
+enable
 configure terminal
-
 hostname R1
-
 interface GigabitEthernet0/0
  ip address 200.1.1.1 255.0.0.0
  ip nat outside
