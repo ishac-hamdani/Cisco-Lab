@@ -2,7 +2,7 @@
 ## Objectif
 Implémenter un NAT avec surcharge (PAT) entre un réseau local (LAN) et l’extérieur.
 
-## 🛠️ Architecture Réseau
+## Architecture Réseau
 
 L'architecture du lab NAT/PAT est composée des éléments suivants :
 
