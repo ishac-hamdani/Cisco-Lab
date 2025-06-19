@@ -19,17 +19,6 @@ L'architecture du lab NAT/PAT est composée des éléments suivants :
 - **DHCP activé** sur R1 pour attribuer une IP automatiquement à PC0.
 - **Fichier web `helloworld.html`** hébergé sur le serveur pour test HTTP.
 
-PC1 :
-- DHCP automatique depuis R1
-
-R1 :
-
--  G0/0 → vers le serveur (NAT outside) – IP : 200.1.1.1/8
-
--  G0/1 → vers le LAN (NAT inside) – IP : 192.168.1.1/24
-
-- Server PT : héberge helloworld.html
-
 ## Configuration
 ```bash
 enable
