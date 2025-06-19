@@ -1,4 +1,4 @@
-# Lab – Routage Inter-VLAN avec Router-on-a-Stick (Lab12_Trunking)
+# Lab12_Trunking – Routage Inter-VLAN avec Router-on-a-Stick
 ## Objectif
 Configurer le routage inter-VLAN via un seul port trunk entre le routeur et le switch. Les clients obtiennent leur IP par DHCP.
 
