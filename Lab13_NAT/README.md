@@ -7,7 +7,8 @@ Implémenter un NAT avec surcharge (PAT) entre un réseau local (LAN) et l’ext
             |       |       |
         VLAN 1   NAT    IP Publique
 
-- PC1 : DHCP automatique depuis R1
+PC1 :
+- DHCP automatique depuis R1
 
 R1 :
 
