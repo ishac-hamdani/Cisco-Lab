@@ -6,8 +6,8 @@ Configurer le routage inter-VLAN via un seul port trunk entre le routeur et le s
 Router-on-a-Stick : méthode où un seul port physique du routeur gère plusieurs VLANs grâce à des sous-interfaces (dot1Q).
 
 ## Topologie
-- Routeur : R0
-- Switch : 2960
+- Routeur : Cisco 2911
+- Switch :Cisco Catalyst 2960
 - VLAN 10 → 192.168.10.0/24 → PC0
 - VLAN 20 → 192.168.20.0/24 → PC1
 - Port Fa0/1 entre routeur et switch = trunk
