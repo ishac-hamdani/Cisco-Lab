@@ -23,7 +23,7 @@ Ce dépôt contient des laboratoires réseau créés avec Cisco Packet Tracer da
 - [Lab10_Dynamic_Routing_RIP](./Lab10_Dynamic_Routing_RIP) : routage dynamique avec RIP.
 - [Lab11_Dynamic_Routing_OSPF](./Lab11_Dynamic_Routing_OSPF) : routage dynamique avec OSPF.
 - [Lab12_Trunking](./Lab12_Trunking) : configuration de trunk entre équipement.
-- [Lab13_NAT](./Lab13_NAT) : traduction d’adresses réseau (NAT/PAT)  (A venir)
+- [Lab13_NAT](./Lab13_NAT) : traduction d’adresses réseau (NAT/PAT).
 - [Lab14_VPN_Basics](./Lab14_VPN_Basics) : VPN site-à-site simple  (A venir)
 
 ### Services & supervision réseau  
