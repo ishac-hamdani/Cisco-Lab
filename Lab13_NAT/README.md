@@ -2,7 +2,22 @@
 ## Objectif
 Implémenter un NAT avec surcharge (PAT) entre un réseau local (LAN) et l’extérieur.
 
-## Architecture
+## 🛠️ Architecture Réseau
+
+L'architecture du lab NAT/PAT est composée des éléments suivants :
+
+```
+[PC0] --- [Switch] --- [R1] --- [Cloud/Internet]
+             |           |
+       IP: 192.168.1.X   |-- Gi0/1: 192.168.1.1 (NAT inside)
+                         |-- Gi0/0: 200.1.1.1   (NAT outside)
+```
+
+- **PC0** : Client dans le réseau LAN, reçoit son IP via DHCP.
+- **R1** : Routeur NAT, réalise la traduction d’adresses (NAT/PAT).
+- **Cloud ou Server PT** : Sert de destination simulée pour les tests Internet.
+- **DHCP activé** sur R1 pour attribuer une IP automatiquement à PC0.
+- **Fichier web `helloworld.html`** hébergé sur le serveur pour test HTTP.
 
 PC1 :
 - DHCP automatique depuis R1
