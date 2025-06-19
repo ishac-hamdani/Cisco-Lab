@@ -9,7 +9,7 @@ Implémenter un NAT avec surcharge (PAT) entre un réseau local (LAN) et l’ext
 
 - PC1 : DHCP automatique depuis R1
 
-- R1 :
+R1 :
 
 -  G0/0 → vers le serveur (NAT outside) – IP : 200.1.1.1/8
 
