@@ -40,3 +40,19 @@ end
 write memory
 ```
 
+### R1
+```bash
+enable
+configure terminal
+hostname R2
+interface GigabitEthernet0/0
+ ip address 192.168.1.3 255.255.255.0
+ standby 1 ip 192.168.1.1
+ standby 1 priority 100
+ standby 1 preempt
+ no shutdown
+exit
+banner motd ^CR2 - HSRP Standby^C
+end
+write memory
+```
