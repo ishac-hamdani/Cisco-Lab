@@ -40,7 +40,7 @@ end
 write memory
 ```
 
-### R1
+### R2
 ```bash
 enable
 configure terminal
