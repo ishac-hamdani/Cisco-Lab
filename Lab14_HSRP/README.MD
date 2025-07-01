@@ -36,7 +36,7 @@ interface GigabitEthernet0/0
  standby 1 preempt
  no shutdown
 exit
-banner motd ^CR1 - HSRP Actif^C
+banner motd ^Ishac-LAB^C
 end
 write memory
 ```
@@ -53,7 +53,7 @@ interface GigabitEthernet0/0
  standby 1 preempt
  no shutdown
 exit
-banner motd ^CR2 - HSRP Standby^C
+banner motd ^Ishac-LAB^C
 end
 write memory
 ```
