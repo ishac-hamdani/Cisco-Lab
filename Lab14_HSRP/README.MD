@@ -7,6 +7,7 @@ Mettre en place une redondance de passerelle avec **HSRP** (Hot Standby Router P
 
 L'architecture du lab HSRP est composée des éléments suivants :
 
+```
 [PC0] --- [Switch] --- [R1]
 | |
 | |-- Gi0/0: 192.168.1.2 (HSRP)
@@ -14,7 +15,7 @@ L'architecture du lab HSRP est composée des éléments suivants :
 ---- [R2]
 |
 |-- Gi0/0: 192.168.1.3 (HSRP)
-
+```
 - **PC0** : Client dans le réseau LAN, utilise l’IP virtuelle HSRP comme passerelle.
 - **R1** : Routeur actif avec priorité plus élevée.
 - **R2** : Routeur de secours (standby).
@@ -56,3 +57,8 @@ banner motd ^CR2 - HSRP Standby^C
 end
 write memory
 ```
+### PC 0
+Adresse IP  : 192.168.1.10  
+Masque      : 255.255.255.0  
+Passerelle  : 192.168.1.1
+
